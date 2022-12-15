@@ -30,6 +30,12 @@
   background-color: white;                      /*white*/
   color: #006699;                               /*darkest-teal*/
 }
+.accordion2 .accordion-button:hover {
+  background-color: #738fab;
+}
+.accordion2 .accordion-button:not(.collapsed) {
+  background-color: #738fab;
+}
 
 /* - DBC BUTTON - */
 .btn-outline-secondary {
@@ -42,6 +48,9 @@
 }
 
 /* - DCC DROPDOWN - */
+.dash-dropdown {
+  margin-bottom: 0.15rem;
+}
 .Select-control, .Select-input>input {
   width: 100% !important;
 }
@@ -59,6 +68,42 @@
 }
 .dash-dropdown {
   color: #738fab;
+}
+.VirtualizedSelectOption {
+    background-color: white;
+}
+.VirtualizedSelectFocusedOption {
+    background-color: #738fab;
+    color: #f9f9f9;
+}
+
+
+/* - DCC RADIOITEMS MENU - */
+
+input[type="radio"] {                   /*original*/
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+input[type="radio"]:after {             /*unselected*/
+    content: '';
+    display: block;
+    position: relative;
+    width: 14px;
+    height: 14px;
+}
+input[type="radio"]:checked:after {     /*selected*/
+    left: 0.1rem;
+    top: 0.75rem;
+    width: 10px;
+    height: 10px;
+    background: #D6F2FA;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 0 3px #008CBA;
+    border: 1px solid black;
 }
 
 
