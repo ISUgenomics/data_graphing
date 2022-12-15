@@ -1,0 +1,73 @@
+::placeholder {
+  color: #738fab;
+  font-style: italic;
+  font-size: 1rem;
+  opacity: 1;
+}
+::-webkit-scrollbar{width:6px;border-left:0px solid white;}
+::-webkit-scrollbar-thumb{background-color: #738fab;}
+
+/* - DBC ACCORDION MENU - */
+.accordion-button {                             /*--button when collapsed--*/
+  background-color: #f9f9f9;                    /*light-gray*/
+  color: #006699;                               /*darkest-teal*/
+}
+.accordion-button::after {                      /*--button icon when collapsed--*/
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(228, 209, 209)'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-button:hover {                       /*--button on-hover--*/
+  background-color: #006699;                    /*darkest-teal*/
+  color: #f9f9f9;                               /*light-blue*/
+}
+.accordion-button:not(.collapsed) {             /*--button when expanded--*/
+  background-color: #006699;
+  color: #f9f9f9;
+}
+.accordion-button:not(.collapsed)::after {      /*--button icon when expanded--*/
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgb(228, 209, 209)'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-item {                               /*--expanded content--*/
+  background-color: white;                      /*white*/
+  color: #006699;                               /*darkest-teal*/
+}
+
+/* - DBC BUTTON - */
+.btn-outline-secondary {
+  color: #006699;
+  border-color: #006699;
+}
+.btn:hover {
+  color: #f9f9f9;
+  background-color: #006699;
+}
+
+/* - DCC DROPDOWN - */
+.Select-control, .Select-input>input {
+  width: 100% !important;
+}
+.Select-control {
+  width: 100% !important;
+  border: 1px solid #008CBA;
+  color: #738fab;
+}
+.Select-placeholder {
+  color: #738fab;
+  font-style: italic;
+}
+.has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
+  color: #006699;
+}
+.dash-dropdown {
+  color: #738fab;
+}
+
+
+input {
+  color: #738fab;
+  border: 1px solid #008CBA;
+  border-radius: 4px;
+  padding: 1px calc(var(--bs-gutter-x) * .4);
+  height: 34px;
+  font-style: italic;
+}
+
