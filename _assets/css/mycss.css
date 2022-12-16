@@ -30,6 +30,9 @@
   background-color: white;                      /*white*/
   color: #006699;                               /*darkest-teal*/
 }
+.accordion2 .accordion-button {
+  height: 40px;
+}
 .accordion2 .accordion-button:hover {
   background-color: #738fab;
 }
@@ -50,12 +53,10 @@
 /* - DCC DROPDOWN - */
 .dash-dropdown {
   margin-bottom: 0.15rem;
-}
-.Select-control, .Select-input>input {
-  width: 100% !important;
+  color: #738fab;
 }
 .Select-control {
-  width: 100% !important;
+  width: 100% !important; /* dropdown window vs. dropdown options */
   border: 1px solid #008CBA;
   color: #738fab;
 }
@@ -66,8 +67,8 @@
 .has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
   color: #006699;
 }
-.dash-dropdown {
-  color: #738fab;
+.wide-opts .Select-menu-outer {
+  min-width: 150px !important;
 }
 .VirtualizedSelectOption {
     background-color: white;
@@ -77,6 +78,43 @@
     color: #f9f9f9;
 }
 
+
+/* - DCC CHECKBOX MENU - */
+
+input[type="checkbox"] {                /*original*/
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    top: -0.4rem;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+input[type="checkbox"]:after {          /*unselected*/
+    content: '';
+    display: block;
+    position: relative;
+    left: 0;
+    top: -0.2rem;
+    width: 14px;
+    height: 14px;
+    background-color: #f9f9f9;
+    border-radius: 30%;
+    border: 1px solid lightgray;
+}
+
+input[type="checkbox"]:checked:after {  /*selected*/
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: -0.2rem;
+    background: #D6F2FA;
+    border-radius: 30%;
+    position: relative;
+    border: 3px solid #008CBA;
+}
 
 /* - DCC RADIOITEMS MENU - */
 
