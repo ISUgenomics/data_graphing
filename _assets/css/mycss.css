@@ -44,11 +44,13 @@
 .btn-outline-secondary {
   color: #006699;
   border-color: #006699;
+  background-color: #D6F2FA;  
 }
 .btn:hover {
   color: #f9f9f9;
   background-color: #006699;
 }
+
 
 /* - DCC DROPDOWN - */
 .dash-dropdown {
