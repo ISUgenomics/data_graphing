@@ -81,6 +81,8 @@
   color: var(--col2);
   font-style: italic;
   font-size: var(--fsm);
+  padding: 1px calc(var(--bs-gutter-x) * .2) !important;
+  padding-right: 1px !important;
 }
 .has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
   color: var(--col4);
@@ -175,7 +177,8 @@ input {
   color: var(--col2);
   border: 1px solid var(--col3);
   border-radius: 4px;
-  padding: 1px calc(var(--bs-gutter-x) * .4);
+  padding: 1px calc(var(--bs-gutter-x) * .2) !important;
+  padding-right: 1px !important;
   height: 34px;
   font-style: italic;
   font-size: var(--fsm);
