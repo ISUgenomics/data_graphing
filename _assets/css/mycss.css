@@ -21,6 +21,12 @@
 ::-webkit-scrollbar{width:6px;border-left:0px solid white;}
 ::-webkit-scrollbar-thumb{background-color: #738fab;}
 
+.footer {
+  padding-top: 1.5vh;
+  text-align: center;
+  color: var(--col4);
+}
+
 /* - DBC ACCORDION MENU - */
 .accordion-button {                             /*--button when collapsed--*/
   background-color: var(--col5);                /*light-gray*/
