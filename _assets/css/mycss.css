@@ -11,7 +11,6 @@
   --fsx: 20px;
 }
 
-
 ::placeholder {
   color: #738fab;
   font-style: italic;
@@ -21,10 +20,44 @@
 ::-webkit-scrollbar{width:6px;border-left:0px solid white;}
 ::-webkit-scrollbar-thumb{background-color: #738fab;}
 
+/*::-webkit-resizer {
+  border: 2px solid black;
+  background: red;
+  box-shadow: 0 0 5px 5px blue;
+  outline: 2px solid yellow;
+}*/
+
+::-webkit-resizer {
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent var(--col4) var(--col4) transparent;
+}
+
+body {
+  overflow-y: hidden;
+}
+
 .footer {
-  padding-top: 1.5vh;
+  height: 5vh;
+  padding-top: 1vh;
   text-align: center;
   color: var(--col4);
+}
+
+
+[draggable=true] {
+  cursor: move;
+}
+
+.resize-vertical {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  resize: vertical;
+}
+
+
+.previous-next-container {
+  text-align: left !important;
 }
 
 /* - DBC ACCORDION MENU - */
@@ -149,6 +182,10 @@ input[type="checkbox"]:checked:after {  /*selected*/
 }
 
 
+.show-hide-menu-item input[type="checkbox"] {
+    top: 0.5rem;
+}
+
 
 /* - DCC RADIOITEMS MENU - */
 
@@ -224,3 +261,17 @@ input {
   text-align: center;
 }
 
+
+/* DASH TABLE*/
+
+.dash-table-container {
+  margin-top: 1vh;
+  padding-bottom: 1vh;
+  margin-bottom: 2vh;
+  border-bottom: thick double var(--col5);
+}
+
+.next-page, .last-page, .previous-page, .first-page, .page-number, .current-page-shadow {
+  background-color: white;
+  color: var(--col2);
+}
