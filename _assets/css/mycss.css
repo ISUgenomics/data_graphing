@@ -320,3 +320,7 @@ input {
   vertical-align: middle;
   text-align: center;
 }
+
+.hidden {display: none;}
+
+.visible {display:  initial;}
