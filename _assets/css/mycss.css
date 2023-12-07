@@ -196,7 +196,7 @@ input[type="checkbox"]:checked:after {  /*selected*/
     top: 0.5rem;
 }
 
-.spaced {margin: 3px 0;}
+.spaced {margin: 5px 0;}
 
 
 /* - DCC RADIOITEMS MENU - */
