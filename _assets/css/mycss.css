@@ -246,6 +246,9 @@ input {
   font-size: var(--fss);
   color: var(--bs-secondary);
 }
+.required {
+  border: 1px solid var(--bs-form-invalid-border-color);
+}
 
 
 
