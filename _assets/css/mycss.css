@@ -244,7 +244,7 @@ input {
   border: 0px solid var(--col3);
   background-color: var(--col5);
   font-size: var(--fss);
-  color: var(--bs-secondary); /*var(--col2);*/
+  color: var(--bs-secondary);
 }
 
 
