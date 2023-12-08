@@ -241,8 +241,10 @@ input {
 
 .smaller {height: 28px !important;}
 .disabled {
+  border: 0px solid var(--col3);
   background-color: var(--col5);
   font-size: var(--fss);
+  color: var(--bs-secondary); /*var(--col2);*/
 }
 
 
