@@ -161,7 +161,7 @@ input[type="checkbox"] {                /*original*/
     left: 0;
     width: 0px;
     height: 0px;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 input[type="checkbox"]:after {          /*unselected*/
     content: '';
@@ -190,7 +190,9 @@ input[type="checkbox"]:checked:after {  /*selected*/
   position: relative;
   top: -0.6rem;
 }
-
+.dist-label {
+    margin-left: 10px !important;
+}
 
 .show-hide-menu-item input[type="checkbox"] {
     top: 0.5rem;
