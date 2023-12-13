@@ -282,6 +282,12 @@ input {
   border: 0px;
 }
 
+
+#edition-items .dt-buttons {
+  display: none;
+  width: fit-content;
+}
+
 .tooltip-inner {
   background-color: #dcdcdc;
   color: black;
@@ -358,6 +364,6 @@ input {
   text-align: center;
 }
 
-.hidden {display: none;}
+.hidden {display: none; !important;}
 
-.visible {display:  initial;}
+.visible {display:  initial; !important;}
