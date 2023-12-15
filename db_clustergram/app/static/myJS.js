@@ -82,6 +82,7 @@ function observeStyleChanges() {
               var menu = item.getElementsByClassName('dash-spreadsheet-menu')[0];
               var refElem  = item.getElementsByClassName('dash-spreadsheet-menu-item')[0];
               var buttons = item.getElementsByClassName('dt-buttons')[0];
+              var format = buttons.getElementsByClassName('export-format')[0];
               console.log("MoveDataTableButtons: ", buttons)                                 // DEBUG
               
               if (menu && refElem && buttons) {
@@ -97,9 +98,9 @@ function observeStyleChanges() {
                 current.textContent = 'download';
                 current.setAttribute('title', 'Download current visible data from the DataTable.');
                 current.classList.add('d-inline', 'btn', 'btn-outline-secondary', 'btn-sm', 'h28', 'me-2', 'ms-1');
-                current.parentNode.style.display = 'flex';
-                var format = buttons.getElementsByClassName('export-format')[0];
-                current.parentNode.insertBefore(format, current);
+                var parent = current.closest('div');
+                parent.style.display = 'flex';
+                parent.insertBefore(format, current);
               } else {
                 console.log('Element Menu, Reference or Buttons not found');
               }
@@ -130,7 +131,7 @@ window.onload = function() {
 
         // Call globally accessible functions:
         observeStyleChanges();
-    }, 500);
+    }, 1000);
 };
 
 
