@@ -87,9 +87,22 @@ function observeStyleChanges() {
               if (menu && refElem && buttons) {
                 buttons.setAttribute('style', 'display: inline-flex;');
                 menu.insertBefore(buttons, refElem);
+                menu.classList.add('frame', 'p-1');
+                refElem.classList.add('vertical-line-left', 'vertical-line-right', 'ps-1', 'me-2');
+                var toggle = refElem.getElementsByClassName('show-hide')[0];
+                toggle.textContent = 'unhide cols'; 
+                toggle.setAttribute('title', 'Column Visibility Checklist: \n- Check a column to make it visible. \n- Uncheck to hide a visible column.');
+                toggle.classList.add('d-inline', 'btn', 'btn-outline-secondary', 'btn-sm', 'h28', 'me-2', 'ms-2');
+                var current = menu.getElementsByClassName('export')[0];
+                current.textContent = 'download';
+                current.setAttribute('title', 'Download current visible data from the DataTable.');
+                current.classList.add('d-inline', 'btn', 'btn-outline-secondary', 'btn-sm', 'h28', 'me-2', 'ms-1');
+                current.parentNode.style.display = 'flex';
+                var format = buttons.getElementsByClassName('export-format')[0];
+                current.parentNode.insertBefore(format, current);
               } else {
                 console.log('Element Menu, Reference or Buttons not found');
-              } 
+              }
             };
           };
         } else {
